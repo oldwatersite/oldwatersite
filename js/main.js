@@ -1,1 +1,0 @@
-try{var meta=document.createElement("meta");meta.setAttribute("name","viewport"),meta.setAttribute("content","width=device-width, initial-scale=1"),window.top.document.getElementsByTagName("html")[0].appendChild(meta)}catch(e){}
