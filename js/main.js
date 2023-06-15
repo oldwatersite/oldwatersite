@@ -2,6 +2,8 @@
 ////////////// Modal Image //////////////////////////
 // add modal image style
 var styles = `
+#myImg:hover {opacity: 0.7;}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
