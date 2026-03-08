@@ -1,7 +1,4 @@
-
-////////////// Modal Image //////////////////////////
-// add modal image style
-var styles = `
+var styles=`
 #myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
@@ -63,31 +60,4 @@ var styles = `
     width: 100%;
   }
 }
-`
-
-var styleSheet = document.createElement("style")
-styleSheet.innerText = styles
-document.head.appendChild(styleSheet)
-
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-//////////////////////////////////////////////////////////////
+`,styleSheet=document.createElement("style"),modal=(styleSheet.innerText=styles,document.head.appendChild(styleSheet),document.getElementById("myModal")),img=document.getElementById("myImg"),modalImg=document.getElementById("img01"),captionText=document.getElementById("caption"),span=(img.onclick=function(){modal.style.display="block",modalImg.src=this.src,captionText.innerHTML=this.alt},document.getElementsByClassName("close")[0]);span.onclick=function(){modal.style.display="none"};
